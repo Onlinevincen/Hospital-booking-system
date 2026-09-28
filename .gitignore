@@ -1,0 +1,49 @@
+# Environment variables (contains sensitive data)
+.env
+.env.local
+.env.production
+
+# Devin configuration
+.devin/
+
+# Uploads directory (user uploaded files)
+uploads/
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Logs
+*.log
+logs/
+
+# Cache
+cache/
+tmp/
+temp/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Composer (if using dependency management)
+/vendor/
+composer.lock
+
+# Node modules (if using npm/yarn)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/

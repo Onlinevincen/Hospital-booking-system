@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Database User Information</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .note { background-color: #fff3cd; padding: 10px; border: 1px solid #ffeeba; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>City Hospital Database User Information</h1>
+    
+    <div class="note">
+        <strong>Note:</strong> This information is based on the SQL dump file. Passwords are hashed, so you'll need to reset them to login.
+    </div>
+    
+    <h2>Users in Database</h2>
+    <table>
+        <tr>
+            <th>User ID</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>System Admin</td>
+            <td>admin@hospital.com</td>
+            <td>admin</td>
+            <td>Active</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>vincent opoku</td>
+            <td>vincent@gmail.com</td>
+            <td>patient</td>
+            <td>Active</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Vincent 0poku</td>
+            <td>vincentopokugyamfi@gmail.com</td>
+            <td>patient</td>
+            <td>Active</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Kwame boakye</td>
+            <td>kwame@gmail.com</td>
+            <td>doctor</td>
+            <td>Active</td>
+        </tr>
+    </table>
+    
+    <h2>Patient Accounts</h2>
+    <table>
+        <tr>
+            <th>Patient ID</th>
+            <th>User ID</th>
+            <th>Full Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>vincent opoku</td>
+            <td>vincent@gmail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>Vincent 0poku</td>
+            <td>vincentopokugyamfi@gmail.com</td>
+        </tr>
+    </table>
+    
+    <h2>How to Access the Chatbot</h2>
+    <ol>
+        <li>Go to <a href="http://localhost/city_hospital/login.php">Login Page</a></li>
+        <li>Use one of the patient accounts above (you'll need to reset the password first)</li>
+        <li>After login, you'll be redirected to the patient dashboard</li>
+        <li>Look for the blue circular chat button in the bottom-right corner</li>
+    </ol>
+    
+    <h2>Password Reset Instructions</h2>
+    <p>Since the PHP MySQL driver seems to be unavailable, you have a few options:</p>
+    <ul>
+        <li><strong>Option 1:</strong> Use phpMyAdmin if available to reset passwords</li>
+        <li><strong>Option 2:</strong> Create a new patient account via registration</li>
+        <li><strong>Option 3:</strong> Install the PHP MySQL driver</li>
+    </ul>
+    
+    <h2>Quick Test - Create New Account</h2>
+    <p>The easiest way to test the chatbot is to create a new patient account:</p>
+    <ol>
+        <li>Go to <a href="http://localhost/city_hospital/register.php">Registration Page</a></li>
+        <li>Fill in the registration form</li>
+        <li>After registration, login with your new credentials</li>
+        <li>You'll see the chatbot button on the dashboard</li>
+    </ol>
+</body>
+</html>
